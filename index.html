@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Audio Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Online Audio Editor</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Upload Audio</h2>
+      <input type="file" id="audioFile" accept="audio/*">
+    </section>
+    <section>
+      <h2>Editing Controls</h2>
+      <div class="control-buttons">
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+      </div>
+      <div class="control-buttons">
+        <button id="reverseBtn">Reverse</button>
+        <button id="echoBtn">Echo</button>
+        <button id="lofiBtn">Lofi</button>
+      </div>
+      <label for="volumeSlider">Volume:</label>
+      <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+      <label for="speedSlider">Speed:</label>
+      <input type="range" id="speedSlider" min="0.5" max="2" step="0.1" value="1">
+    </section>
+    <section>
+      <h2>Audio Trim</h2>
+      <label for="startTrim">Start Time:</label>
+      <input type="number" id="startTrim" min="0" step="0.1" value="0">
+      <label for="endTrim">End Time:</label>
+      <input type="number" id="endTrim" min="0" step="0.1" value="0">
+      <button id="trimBtn">Trim Audio</button>
+    </section>
+  </main>
+  <div class="sound-bar-container">
+    <div id="soundBar"></div>
+  </div>
+  <div class="sound-timeline-container">
+    <div id="soundTimeline">
+      <input type="range" id="seekSlider" min="0" max="100" step="0.1" value="0">
+      <div class="progress"></div>
+    </div>
+  </div>
+  <footer>
+    Thank you for visiting
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #1db954;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+  }
+  
+  section {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  input[type="file"] {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.2s;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  button:hover {
+    background-color: #1ed760;
+  }
+  
+  footer {
+    background-color: #282828;
+    padding: 1rem;
+    text-align: center;
+    color: #a0a0a0;
+  }
+  
+  /* Sound bar styles */
+  .sound-bar-container {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  
+  #soundBar {
+    width: 100%;
+    height: 20px;
+    background-color: #535353;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #soundBar .progress {
+    height: 100%;
+    background-color: #1db954;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Sound timeline bar styles */
+  .sound-timeline-container {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  
+  #soundTimeline {
+    width: 100%;
+    height: 10px;
+    background-color: #535353;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  #soundTimeline input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background-color: #535353;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  #soundTimeline input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 20px;
+    background-color: #1db954;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #fff;
+  }
+  
+  #soundTimeline input[type="range"]:focus {
+    outline: none;
+  }
+  
+  #soundTimeline input[type="range"]::-moz-range-thumb {
+    width: 10px;
+    height: 20px;
+    background-color: #1db954;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #fff;
+  }
+  
+  #soundTimeline input[type="range"]::-ms-thumb {
+    width: 10px;
+    height: 20px;
+    background-color: #1db954;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #fff;
+  }
+  /* Existing styles... */
+
+/* New styles for control buttons */
+.control-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  /* Additional styles for control buttons */
+  button {
+    display: block;
+    padding: 0.75rem;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: background-color 0.2s;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  button:hover {
+    background-color: #1ed760;
+  }
+  
